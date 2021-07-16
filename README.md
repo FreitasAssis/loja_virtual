@@ -1,8 +1,10 @@
-# Sobre o teste do Luiz para frontend da Liven
+# Teste da [Liven](https://liven.tech/pt) para frontend - [Luiz Freitas](https://luiz-freitas.web.app/)
 
-Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app) e segue as especificações listadas [aqui](https://www.notion.so/Projeto-de-avalia-o-t-cnica-Frontend-7e522e6babf640e6a313bedd8bdbadbb).
+Este projeto foi criado utilizando [Create React App](https://github.com/facebook/create-react-app) e segue as especificações listadas [aqui](https://www.notion.so/Projeto-de-avalia-o-t-cnica-Frontend-7e522e6babf640e6a313bedd8bdbadbb).
 
-## Para clonar o projeto, executar o comando:
+## Para visualizar online a aplicação, acessar [https://livenstore.netlify.app/](https://livenstore.netlify.app/)
+
+## Para clonar o projeto em sua máquina local, executar o comando:
 
 `git clone https://github.com/FreitasAssis/liven_test_front.git`
 
