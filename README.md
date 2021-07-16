@@ -1,70 +1,42 @@
-# Getting Started with Create React App
+# Sobre o teste do Luiz para frontend da Liven
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este projeto foi criado com [Create React App](https://github.com/facebook/create-react-app) e segue as especificações listadas [aqui](https://www.notion.so/Projeto-de-avalia-o-t-cnica-Frontend-7e522e6babf640e6a313bedd8bdbadbb).
 
-## Available Scripts
+## Para clonar o projeto, executar o comando:
 
-In the project directory, you can run:
+`git clone https://github.com/FreitasAssis/liven_test_front.git`
 
-### `yarn start`
+## Depois, entrar na pasta local do projeto:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`cd liven_test_front`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## A partir daí, seguem alguns comandos úteis...
 
-### `yarn test`
+Para rodar a aplicação em modo de desenvolvimento `yarn start`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Após tudo concluído, abrir [http://localhost:3000](http://localhost:3000) para visualizar a aplicação no navegador.
 
-### `yarn build`
+Para visualizar os testes, executar `yarn test`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Mais algumas informações sobre os testes podem ser vistas em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Uma versão para ambiente de produção pode ser gerada com `yarn build`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Resumo do projeto:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+É uma loja virtual simples com um catálogo de produtos e um carrinho de compras, onde o usuário pode adicionar/remover produtos do catálogo no carrinho.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Algumas stacks e libs utiladas:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Além de utilizar [ReactJS](https://reactjs.org/), usei algumas ferramentas para facilitar / adiantar o desenvolvimento:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+[LocalStorage](https://developer.mozilla.org/pt-BR/docs/Web/API/Window/localStorage) - Para simular uma espécie de banco de dados, para o CRUD do carrinho de compras;
 
-## Learn More
+[SweetAlert2](https://sweetalert2.github.io/) - Para algumas mensagens ao usuário;
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Bootstrap](https://getbootstrap.com/docs/4.0/getting-started/introduction/) - Para estilos e classes;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[Moment.js](https://momentjs.com/) - Para tratamento de datas;
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[StyledComponents](https://styled-components.com/) - Para criação de estilos;
