@@ -1,0 +1,29 @@
+:root{
+  --mainWhite: #f3f3f3;
+  --primaryBlue: #2a2a72;
+  --secondaryBlue: #809ffd;
+  --tertiaryBlue: #64b5f6;
+  --mainDark: #23252b;
+  --mainYellow: #ffa408;
+  --lightGreen: #54b9a3;
+}
+
+body {
+  font-family: "Oswald", sans-serif !important;
+  background: var(--mainWhite) !important;
+  color: var(--mainDark) !important;
+}
+
+.text-title {
+  font-family: "Montserrat", cursive;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: var(--primaryBlue);
+}
+
+.text-bright {
+  color: var(--secondaryBlue);
+}
