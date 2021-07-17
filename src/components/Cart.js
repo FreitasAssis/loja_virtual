@@ -54,7 +54,7 @@ class Cart extends Component {
             <div className="p-5">
                 <Title name="Meu" title="carrinho" />
                 <div className="row">
-                    <div className={items.length ? "col-8" : "col-12"}>
+                    <div className={items.length ? "col-12 col-md-8 p-0" : "col-12"}>
                         {items.length ?
                             items.map(item => {
                                 const {id, name, price, image} = item
@@ -85,7 +85,7 @@ class Cart extends Component {
                     {items.length ?
                         <div className="col">
                             <h5 className="text-center">Resumo da compra:</h5>
-                            <div className="p-5">
+                            <div className="m-0 mt-4 m-md-5">
                                 {items.map(item => {
                                     const index = items.indexOf(item)
                                     total += (this.state.quantidades[index] * item.price)

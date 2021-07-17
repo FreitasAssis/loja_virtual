@@ -51,6 +51,9 @@ class Product extends Component {
                             <span>R$ {price}</span>
                         </h5>
                         <p className="text-muted mb-0">{moment(createdAt).locale('pt-br').format('LL')}</p>
+                        <button className="mt-2 text-blue d-flex d-lg-none" onClick={() => {this.addToCart(this.props.product)}}>
+                            {items.some(e => e.id === id) ? <p className="text-capitalize mb-8" disabled>No carrinho</p> : <i className="fas fa-cart-plus" />}
+                        </button>
                     </div>
                 </div>
             </ProdutoWrapper>
