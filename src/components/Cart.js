@@ -65,7 +65,7 @@ class Cart extends Component {
                                             <div className="col-3 p-3 d-flex justify-content-center">
                                                 <img src={image} className="img-fluid h-100 rounded" alt="product" />
                                             </div>
-                                            <div className="col p-3 card-description d-flex justify-content-between">
+                                            <div className="col p-0 p-sm-3 card-description d-flex justify-content-between">
                                                 <h5 className="mb-0 title">
                                                     <span>Produto: {name}</span>
                                                     <span className="btn-del rounded-circle" onClick={() => this.delItem(index)}>
