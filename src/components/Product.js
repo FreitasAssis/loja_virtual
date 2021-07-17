@@ -3,6 +3,8 @@ import {Link} from "react-router-dom"
 import styled from "styled-components"
 import PropTypes from 'prop-types'
 import Swal from 'sweetalert2'
+import moment from "moment"
+import 'moment/locale/pt-br'
 
 class Product extends Component {
     addToCart(product) {
@@ -30,12 +32,12 @@ class Product extends Component {
         }
     }
     render() {
-        const {id, name, price, image} = this.props.product
+        const {id, name, price, image, createdAt} = this.props.product
         const items = localStorage.getItem("items") !== null ? JSON.parse(localStorage.getItem("items")) : []
         return (
             <ProdutoWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
                 <div className="card">
-                    <div className="img-container p-5">
+                    <div className="img-container p-3">
                         <Link to={{pathname: "/details", product: this.props.product}}>
                             <img src={image} alt="produto" className="card-img-top" />
                         </Link>
@@ -43,11 +45,12 @@ class Product extends Component {
                             {items.some(e => e.id === id) ? <p className="text-capitalize mb-8" disabled>No carrinho</p> : <i className="fas fa-cart-plus" />}
                         </button>
                     </div>
-                    <div className="card-footer d-flex justify-content-between">
-                        <p className="align-self-center mb-0">{name.length <= 20 ? name : name.substr(0, 19) + "..."}</p>
-                        <h5 className="text-blue font-italic mb-0">
-                            <span className="mr-1">R$ {price}</span>
+                    <div className="card-footer d-flex justify-content-between align-items-center">
+                        <p className="align-self-center mb-0">{name.length <= 30 ? name : name.substr(0, 29) + "..."}</p>
+                        <h5 className="text-blue font-italic my-2">
+                            <span>R$ {price}</span>
                         </h5>
+                        <p className="text-muted mb-0">{moment(createdAt).locale('pt-br').format('LL')}</p>
                     </div>
                 </div>
             </ProdutoWrapper>
@@ -75,6 +78,7 @@ const ProdutoWrapper = styled.div`
         background: transparent;
         border-top: transparent;
         transition: all 1s linear;
+        flex-direction: column;
     }
     &:hover {
         .card {
