@@ -18,7 +18,7 @@ Para rodar a aplicação em modo de desenvolvimento `yarn start`
 
 Após tudo concluído, abrir [http://localhost:3000](http://localhost:3000) para visualizar a aplicação no navegador.
 
-Para visualizar os testes, executar `yarn test`
+Para visualizar os testes, executar `yarn test` (A ser implementados em breve)
 
 Mais algumas informações sobre os testes podem ser vistas em [running tests](https://facebook.github.io/create-react-app/docs/running-tests).
 
