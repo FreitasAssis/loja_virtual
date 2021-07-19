@@ -1,16 +1,16 @@
-# Teste da [Liven](https://liven.tech/pt) para frontend - [Luiz Freitas](https://luiz-freitas.web.app/)
+# Loja Virtual - [Luiz Freitas](https://luiz-freitas.web.app/)
 
-Este projeto foi criado utilizando [Create React App](https://github.com/facebook/create-react-app) e segue as especificações listadas [aqui](https://www.notion.so/Projeto-de-avalia-o-t-cnica-Frontend-7e522e6babf640e6a313bedd8bdbadbb).
+Este é um projeto de loja virtual simples e foi criado utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Para visualizar online a aplicação, acessar [https://livenstore.netlify.app/](https://livenstore.netlify.app/)
+## Para visualizar online a aplicação, acessar [https://minhalojavirtual.netlify.app](https://livenstore.netlify.app/)
 
 ## Para clonar o projeto em sua máquina local, executar o comando:
 
-`git clone https://github.com/FreitasAssis/liven_test_front.git`
+`git clone https://github.com/FreitasAssis/loja_virtual.git`
 
 ## Depois, entrar na pasta local do projeto:
 
-`cd liven_test_front`
+`cd loja_virtual`
 
 ## A partir daí, seguem alguns comandos úteis...
 
