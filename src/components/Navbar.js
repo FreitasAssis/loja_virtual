@@ -10,7 +10,7 @@ class Navbar extends Component {
             <NavWrapper className="navbar navbar-expand-sm navbar-dark px-sm-5">
                 <Link to="/" className="d-flex align-items-center">
                     <img src={logo} alt="liven" className="navbar-brand rounded-circle" />
-                    <span className="nav-link">Lojinha Liven</span>
+                    <span className="nav-link">Minha Loja</span>
                 </Link>
                 <ul className="nav navbar-nav align-items-center">
                     <li className="nav-item ml-5">
