@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Title from './Title'
 import styled from "styled-components"
 import Swal from 'sweetalert2'
+import {ButtonContainer} from "./Button"
 
 class Cart extends Component {
     constructor(props) {
@@ -85,7 +86,7 @@ class Cart extends Component {
                     {items.length ?
                         <div className="col">
                             <h5 className="text-center">Resumo da compra:</h5>
-                            <div className="m-0 mt-4 m-md-5">
+                            <div className="d-flex flex-column m-0 mt-4 m-md-5">
                                 {items.map(item => {
                                     const index = items.indexOf(item)
                                     total += (this.state.quantidades[index] * item.price)
@@ -93,7 +94,13 @@ class Cart extends Component {
                                         <p key={item.id}>{item.name} - {this.state.quantidades[index]} und = R$ {this.state.quantidades[index] * item.price}</p>
                                     )
                                 })}
-                                <h5 className="mt-3">Total = R$ {total}</h5>
+                                <h5 className="my-3">Total = R$ {total}</h5>
+                                <ButtonContainer>
+                                    <span className="mr-2">    
+                                        <i className="fas fa-credit-card" />
+                                    </span>
+                                    Comprar
+                                </ButtonContainer>
                             </div>
                         </div> :
                         <></>
