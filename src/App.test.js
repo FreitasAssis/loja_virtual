@@ -38,6 +38,7 @@ it("Remover item do carrinho", () => {
     const { getByTestId } = render(<Cart />)
     const btnDel = getByTestId("delete-0");
     fireEvent.click(btnDel);
+    /* eslint-disable */
     expect(items).toEqual(items.splice(0, 1))
   }
 });
