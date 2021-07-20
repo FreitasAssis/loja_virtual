@@ -52,7 +52,7 @@ class Cart extends Component {
         const items = localStorage.getItem("items") !== null ? JSON.parse(localStorage.getItem("items")) : []
         let total = 0
         return (
-            <div className="p-5">
+            <div className="cart p-5">
                 <Title name="Meu" title="carrinho" />
                 <div className="row">
                     <div className={items.length ? "col-12 col-md-8 p-0" : "col-12"}>
@@ -69,7 +69,7 @@ class Cart extends Component {
                                             <div className="col p-0 p-sm-3 card-description d-flex justify-content-between">
                                                 <h5 className="mb-0 title">
                                                     <span>Produto: {name}</span>
-                                                    <span className="btn-del rounded-circle" onClick={() => this.delItem(index)}>
+                                                    <span data-testid={'delete-' + items.indexOf(item)} className="btn-del rounded-circle" onClick={() => this.delItem(index)}>
                                                         <i className="fas fa-trash-alt" />
                                                     </span>
                                                 </h5>

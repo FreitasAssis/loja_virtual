@@ -64,7 +64,7 @@ class ProductList extends Component {
                                 <option>Data do anúncio (recentes primeiro)</option>
                             </select>
                         </div>
-                        <div className="row">
+                        <div className="row product-list">
                             {this.state.products.map(product => {
                                 return <Product key={product.id} product={product} />
                             })}
