@@ -3,9 +3,7 @@ import ReactDom from 'react-dom';
 import { render, fireEvent } from "@testing-library/react";
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-import Title from './components/Title';
 import ProductList from './components/ProductList';
-import Navbar from './components/Navbar';
 import Cart from './components/Cart';
 
 it('renderizar App', () => {
