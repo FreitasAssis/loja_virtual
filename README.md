@@ -2,7 +2,7 @@
 
 Este é um projeto de loja virtual simples e foi criado utilizando [Create React App](https://github.com/facebook/create-react-app).
 
-## Para visualizar online a aplicação, acessar [https://minhalojavirtualteste.netlify.app/](https://livenstore.netlify.app/)
+## Para visualizar online a aplicação, acessar [https://minhalojavirtualteste.netlify.app/](https://minhalojavirtualteste.netlify.app/)
 
 ## Para clonar o projeto em sua máquina local, executar o comando:
 
